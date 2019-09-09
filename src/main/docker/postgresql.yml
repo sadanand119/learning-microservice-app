@@ -1,0 +1,11 @@
+version: '2'
+services:
+  learningmicroserviceapp-postgresql:
+    image: postgres:11.4
+    # volumes:
+    #     - ~/volumes/jhipster/learningmicroserviceapp/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=learningmicroserviceapp
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
